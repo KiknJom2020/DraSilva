@@ -109,7 +109,7 @@ img.foto-intro {
 
 }
 .intro {
-    background-image: url(./Images/foto_familia_feliz.jpg) !important;
+    background-image: url(Resources/Images/foto_familia_feliz.jpg) !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
