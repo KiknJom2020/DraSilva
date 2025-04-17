@@ -104,7 +104,12 @@ ul.logo-list {
     margin: 0 10px;
     text-shadow: var(--txt-shadow5);
 }
-
+.navbar i {
+    color: var(--text-color);
+    width: 2rem;
+    heigth: auto;
+    text-shadow: var(--txt-shadow5);
+}
 
 /* main */ 
 .foto-intro {
