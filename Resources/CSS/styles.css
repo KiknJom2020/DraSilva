@@ -60,7 +60,7 @@ body {
     vertical-align: middle;
     text-align: center;
     margin: 10px;
-    width: 20vw;
+    width: 100%;
     heigth: auto;
     object-fit: cover;
     border: 1px solid lightblue;
