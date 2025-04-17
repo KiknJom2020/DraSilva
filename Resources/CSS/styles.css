@@ -56,6 +56,9 @@ body {
     grid-template-rows: repeat(2, 1fr);
 }
 .logo {
+    position: absolute;
+    top: 5px;
+    left: 5px;
     vertical-align: middle;
     text-align: center;
     margin: 10px;
