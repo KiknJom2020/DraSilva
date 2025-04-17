@@ -61,7 +61,7 @@ body {
     margin: 10px;
     width: 100%;
     heigth: 100%;
-    object-fit: cover;
+    object-fit: contain;
     overflow:hidden;
     border: 1px solid lightblue;
     box-shadow: 0 0 7px white;
@@ -74,7 +74,7 @@ body {
     font-size: 4rem;
     margin: 5px auto;
     text-shadow: var(--txt-shadow5);
-
+    text-align: center;
 }
 a.navbar-name {
     margin: 0 auto;
