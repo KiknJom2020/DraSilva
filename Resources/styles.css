@@ -1,0 +1,416 @@
+@font-face {
+    font-family: Roboto;
+    src: url(/Resources/Fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf) format('ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(/Resources/Fonts/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf) format('ttf');
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open-Sans';
+    src: url(/Resources/Fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf) format('ttf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open-Sans';
+    src: url(/Resources/Fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf) format('ttf');
+    font-style: italic;
+}
+:root {
+    --bg-color: hsl(220 100% 60%);
+    --bg-color1: hsl(55, 60%, 85%);
+    --bg-color2: radial-gradient( hsl(55, 60%, 85%)10%, white 100%);
+   --bg-color3: linear-gradient(90deg, hsl(220 100% 30%) 5%, hsl(220 100% 60%));
+   --text-color :white;
+   --text-color2 : hsl(220 100% 50%);
+   --text-color3 : hsl(220 100% 30%);
+   --text-color4: #33fff8;
+   --txt-shadow: 0 0 1px #33fff8;
+   --txt-shadow1: 1px 1px #33fff8;
+   --txt-shadow2: 0.4px 0.4px #fff;
+   --txt-shadow3: 0 0 5px #fff;
+   --txt-shadow4: 0 0 3px hsl(220 100% 30%);
+   --txt-shadow5: 0 0 20px #fff, 1px 1px 2px hsl(220 100% 30%);
+   --txt-shadow6: 0 0 2px #33fff8, 0.5px 0.5px 2px hsl(220 100% 30%);
+   --txt-shadow7: 0.3px 0.3px 3px hsl(220 100% 10%);
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--bg-color3);
+    color: var(--text-color);
+    padding: 1px;
+}
+
+/* header */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px var(--text-color4);
+}
+.logo {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 10px;
+    object-fit: cover;
+    border: 1px solid lightblue;
+    box-shadow: 0 0 7px white;
+}
+
+.navbar a {
+    position:relative;
+    text-decoration: none;
+    color: var(--text-color);
+    text-shadow: var(--txt-shadow1);
+}
+.navbar a:hover {
+    text-shadow: var(--txt-shadow5);
+}
+.navbar-name {
+    font-size: 4rem;
+    margin: 0 auto;
+}
+
+ul.logo-list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Roboto';
+}
+
+ul.logo-list li {
+    list-style: none;
+    font-size: 1.5rem;
+    text-shadow: var(--txt-shadow);
+}
+
+/* main */ 
+.foto-intro {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+}
+img.foto-intro {
+    border-radius: 20px;
+}
+.intro {
+    background-image: url(/Resources/Images/foto_familia_feliz.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    box-shadow: 0 1px 3px var(--text-color4);
+}
+
+.bio {
+    margin: 5px 0;
+    padding: 5px 20px 20px;
+    width: 100%;
+    color: var(--text-color2);
+    font-family: 'Roboto', sans-serif;
+}
+
+.bio h1 {
+    color: var(--text-color2);
+    text-shadow: var(--txt-shadow);
+    text-align: center;
+    margin: 0 auto;
+}
+.bio p {
+    color: var(--text-color2);
+    text-shadow: var(--txt-shadow);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: O 10px;
+    text-align: center;
+}
+
+.servicios {
+    color: var(--text-color2);
+    text-shadow: var(--txt-shadow1);
+    background: var(--bg-color2);
+    margin-top: 10px;
+    padding: 5px;
+    font-family: 'Open-Sans', sans-serif;
+    box-shadow: 0 1px 3px var(--text-color4);
+    text-align: center;
+}
+hr {
+    width: 50%;
+    margin: 0 auto;
+}
+.temas {
+    text-align: center;
+    margin: 20px auto;
+}
+.temas h2 {
+    margin-bottom: 10px;
+
+}
+.temas li {
+    font-size: 1.4rem;
+    color: var(--text-color2);
+    margin: 5px auto;
+}
+.temas li::before {
+    display: inline-block;
+    content: '\002713';
+    margin-right: 5px;
+    color: green;
+}
+.temas-img {
+    border-radius: 5%;
+    object-fit: cover;
+    border: 1px solid lightblue;
+    box-shadow: 0 0 7px white;
+    width: 60%;
+}
+
+/* contact */
+address {
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: var(--txt-shadow7);
+    font-family: 'Roboto', sans-serif;
+}
+
+address a:hover {
+    color: var(--text-color1);
+    font-size: 1.25rem;
+    text-shadow: var(--txt-shadow5);
+}
+
+.contacto {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    font-style: normal;
+    margin: 10px auto 10px;
+}
+
+ a.contact {
+    display:block;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.marcar {
+    width: 100%;
+    padding: 9px;
+    margin: 15px auto;
+    border: 1px solid var(--txt-shadow2);
+    border-radius: 10px;
+    box-shadow: var(--txt-shadow7);
+    background-color: greenyellow;
+    color: var(--text-color2);
+    text-shadow: var(--txt-shadow);
+    text-decoration: none;
+}
+
+.address {
+    margin: 30px auto;
+    font-size: 1.2rem;
+}
+
+.map {
+    text-align: center;
+}
+
+.ggmap {
+    width: 95%;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 25px;
+    border: 1px solid lightblue;
+    box-shadow: 0 0 7px white;
+    border-radius: 5%;
+}
+
+.opiniones {
+    text-align: center;
+    width: 90%;
+    background-color: var(--bg-color2) ;
+    padding: 10px;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+div[class*='elfsight'] {
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+}
+
+footer {
+    text-align: center;
+    margin: 5px auto;
+    padding-top: 10px;
+    border-top: 1px solid white;
+    text-shadow: var(--txt-shadow);
+}
+
+@media screen and (min-width: 599px) {
+   .logo img {
+        width: 100px;
+        height: 100px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .navbar-name {
+        font-size: 5rem;
+    }
+    ul.logo-list {
+        margin-left: 20vw;
+    }
+}
+@media screen and (min-width:759px) {
+    .logo {
+        height: 85px;
+    }
+    .logo img {
+        width: 110px;
+        height: 110px;
+        margin-top: 45px;
+        margin-left: 20px;
+    }
+    .navbar-name {
+        font-size: 4rem;
+        margin-bottom: 0px;
+    }
+    ul.logo-list {
+        margin-left: 20vw;
+        margin-top: 0px;
+    }
+    ul.logo-list li {
+        font-size: 1.5rem;
+    }
+    .whatsapp {
+        margin-top: 5px;
+    }
+    .bio {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 1px;
+        margin-right: 1px;
+        padding: 10px 20px;
+    }
+    .bio-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 5px;
+    }
+    .foto-intro {
+        width: 50%;
+    }
+    .bio h1 {
+        font-size: 1.3rem;
+    }
+    .bio p {
+        font-size: 1.1rem;
+    }
+    .servicios {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 25px;
+        padding-right: 25px;
+        align-items: center;
+    }
+    .temas ul li {
+        list-style-type: none;
+    }
+    .temas {
+        margin: 0;
+        line-height: 1.4;
+    }
+    .temas-img {
+        width: 40%;
+        height: auto;
+        margin: 10px 0;
+    }
+    address {
+        margin-top: 0;
+    }
+    .info {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 1px;
+        margin-right: 1px;
+        padding: 10px 5px;
+        line-height: 1.3;
+    }
+    .ggmap {
+        margin-top: 10px;
+        width: 50vw;
+    }
+}
+@media screen and (min-width: 990px) {
+    .navbar {
+        border-bottom: 1px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+    .logo {
+        width: 50vw;
+        height: 15vh;
+
+    }
+    
+    .logo img {
+        width: 120px;
+        height: 120px;
+        margin-top: 0;
+        margin-left: 10px;
+    }
+   
+    .navbar-name {
+        font-size: 5rem;
+        margin-top: 0px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    ul.logo-list {
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    ul.logo-list li {
+        list-style: none;
+        font-size: 2.2rem;
+        margin: 12px;
+    }
+    .whatsapp {
+        margin-top: 10px;;
+        width: 150px;
+        height: 40px;
+    }
+}
