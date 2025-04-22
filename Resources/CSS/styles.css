@@ -35,7 +35,7 @@
    --txt-shadow5: 0 0 20px #fff, 1px 1px 2px hsl(220 100% 30%);
    --txt-shadow6: 0 0 2px #33fff8, 0.5px 0.5px 2px hsl(220 100% 30%);
    --txt-shadow7: 0.3px 0.3px 3px hsl(220 100% 10%);
-
+   color-scheme: dark light;
 }
 * {
     box-sizing: border-box;
